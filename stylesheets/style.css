@@ -1,1 +1,60 @@
 @import url(normalize.css);
+
+@font-face {
+    font-family: Norse;
+    src: url("../fonts/Norse-Bold.otf");
+}
+
+body {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.splash {
+    background-image: url("../imgs/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    flex-basis: 60%;
+}
+
+.logo-banner {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    margin-top: 20vh;
+}
+
+.logo-banner>img {
+    max-height: 100px;
+    opacity: 1;
+    
+}
+
+.logo-banner>p {
+    font-family: Norse;
+    color: white;
+    opacity: 1;
+    font-size: 6rem;
+    margin: 0rem 0rem;
+}
+
+.photo-credit {
+    color: white;
+    margin-top: auto;
+}
+
+.photo-credit > a {
+    color: white;
+}
