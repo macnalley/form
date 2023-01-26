@@ -34,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: scroll;
 }
 
 .logo-banner {
@@ -68,6 +69,8 @@ body {
 
 .photo-credit > a {
     color: white;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .big-paragraph {
@@ -80,7 +83,7 @@ body {
 
 form {
     margin: 2rem 0rem;
-    padding: 1rem 0rem 3rem 2rem;
+    padding: 1rem 0rem 3rem 3rem;
     background-color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
@@ -108,13 +111,13 @@ input {
 
 
 input:focus {
-    outline: none;
-    border: 2px solid #92ceff;
+    outline: 2px solid #92ceff;
+    border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .content > div {
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 button {
