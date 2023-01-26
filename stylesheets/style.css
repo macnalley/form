@@ -97,10 +97,18 @@ label {
     display: block;
     margin-bottom: 1px;
     font-variant-caps: all-small-caps;
+    letter-spacing: .1rem;
 }
 
 input {
     display: block;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid #92ceff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .content > div {
@@ -115,6 +123,15 @@ button {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #6a8155;
+}
+
+button:active {
+    transform: scale(0.96);
+
 }
 
 a {
