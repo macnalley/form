@@ -167,8 +167,10 @@ button#theme-toggle {
     margin: 1rem;
     padding: .5rem 1rem;
     position: fixed;
+    right:0px;
     background-color: transparent;
     border: 3px solid var(--text-color);
+    color: var(--text-color);
     border-radius: 0px;
     font-size: 1.5rem;
 
