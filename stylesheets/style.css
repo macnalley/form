@@ -11,17 +11,35 @@
     --col-width: 50ch;
 }
 
+:root.light {
+    --image: url("../imgs/lux.jpg");  
+    --background-color: #f5f4f4;
+    --card-color: white;
+    --text-color: black;
+    --accent-color: #3d5067;
+}
+
+:root.dark {
+    --image: url("../imgs/nox.jpg");  
+    --background-color: #3b3b3b;
+    --card-color: rgb(29, 29, 29);
+    --text-color: white;
+    --accent-color: #57415e;
+}
+
+
 body {
-    background-color: #f5f4f4;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: row;
     height: 100vh;
+    color: var(--text-color);
 
     font-family: var(--main-font);
 }
 
 .splash {
-    background-image: url("../imgs/halie-west-25xggax4bSA-unsplash.jpg");
+    background-image: var(--image);
     background-size: cover;
     flex-basis: 40%;
     display: flex;
@@ -84,7 +102,7 @@ body {
 form {
     margin: 2rem 0rem;
     padding: 1rem 0rem 3rem 3rem;
-    background-color: white;
+    background-color: var(--card-color);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -123,7 +141,7 @@ input:focus {
 button {
     padding: 1rem 3rem;
     color: white;
-    background-color: #596D48;
+    background-color: var(--accent-color);
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -131,7 +149,7 @@ button {
 }
 
 button:hover {
-    background-color: #6a8155;
+    filter: brightness(130%);
 }
 
 button:active {
@@ -140,7 +158,18 @@ button:active {
 }
 
 a {
-    color: #596D48;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+button#theme-toggle {
+    margin: 1rem;
+    padding: .5rem 1rem;
+    position: fixed;
+    background-color: transparent;
+    border: 3px solid var(--text-color);
+    border-radius: 0px;
+    font-size: 1.5rem;
+
 }
