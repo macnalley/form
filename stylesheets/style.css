@@ -24,7 +24,7 @@
     --background-color: #3b3b3b;
     --card-color: rgb(29, 29, 29);
     --text-color: white;
-    --accent-color: #57415e;
+    --accent-color: #804a92;
 }
 
 
@@ -133,6 +133,18 @@ input:focus {
     outline: 2px solid #92ceff;
     border: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+input.error {
+    outline: 2px solid #ff7433;
+    border: none;
+}
+
+div.error::after {
+    position: absolute;
+    content: "Passwords must match.";
+    color: #ff7433;
+
 }
 
 .content > div {
